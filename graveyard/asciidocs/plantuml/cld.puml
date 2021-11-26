@@ -1,0 +1,36 @@
+@startuml
+
+class Graveyard{
+    id: Long
+    Name: String
+    Address: String
+}
+
+class Grave{
+    id: Long
+    section: String
+    rented: boolean
+    beginrent: LocalDate
+    endrent: LocalDate
+}
+
+class Gravestone{
+    id: Long
+    dateofdeath: LocalDate
+    Name: String
+}
+
+class Employee{
+    id: Long
+    firstname: String
+    lastname: String
+    address: String
+}
+
+Graveyard <- Grave : has 1 <
+Grave <- Gravestone : has 1 <
+Graveyard <- Employee : has 1 <
+
+
+
+@enduml

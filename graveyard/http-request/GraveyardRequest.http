@@ -1,0 +1,29 @@
+POST http://localhost:8080/Graveyard/Create
+Content-Type:application/json
+
+{
+  "name": "Friedhof St.Gallen",
+  "address": "Feldlistrasse 18"
+}
+
+###
+
+GET http://localhost:8080/Graveyard/findAll
+Accept: application/json
+
+###
+
+DELETE http://localhost:8080/Graveyard/Delete/1
+
+###
+
+PUT http://localhost:8080/Graveyard/Put
+Content-Type:application/json
+
+{
+  "id": 1,
+  "name" : "Friedhof St. Georgen",
+  "address" : "St. Georgen-Strasse 98a"
+}
+
+###

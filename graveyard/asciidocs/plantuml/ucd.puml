@@ -1,0 +1,12 @@
+@startuml
+left to right direction
+actor "Graveyard Manager" as gr
+rectangle Graveyard {
+  usecase "Add new Employee" as UC1
+  usecase "Add new Gravestone" as UC2
+  usecase "Dispose Employee" as UC3
+}
+gr --> UC1
+gr --> UC2
+gr --> UC3
+@enduml

@@ -1,0 +1,33 @@
+POST http://localhost:8080/Grave/Create
+Content-Type:application/json
+
+{
+  "section": "Nord",
+  "rented": "true",
+  "beginrent": "23-01-1981",
+  "endrent": "31-12-2077"
+}
+
+###
+
+GET http://localhost:8080/Grave/findAll
+Accept: application/json
+
+###
+
+DELETE http://localhost:8080/Grave/delete/1
+
+###
+
+PUT http://localhost:8080/Grave/put
+Content-Type:application/json
+
+{
+  "id": 1,
+  "section" : "Nord",
+  "rented" : "false",
+  "beginrent" : null,
+  "endrent": null
+}
+
+###

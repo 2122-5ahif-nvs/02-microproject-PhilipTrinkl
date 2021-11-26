@@ -1,0 +1,31 @@
+POST http://localhost:8080/Gravestone/create
+Content-Type:application/json
+
+{
+  "name" : "Herbert Tischler",
+  "dateofdeath" : "23-05-1948",
+  "inscription" : "Hier ruht in Frieden: Herbert Tischler"
+}
+
+###
+
+GET http://localhost:8080/Gravestone/findAll
+Accept: application/json
+
+###
+
+DELETE http://localhost:8080/Gravestone/delete/1
+
+###
+
+PUT http://localhost:8080/Gravestone/put
+Content-Type:application/json
+
+{
+  "id": 1,
+  "name": "Herbert Tischler",
+  "dateofdeath" : "24-05-1948",
+  "inscription" : "Hier ruht in Frieden: Herbert Tischler"
+}
+
+###

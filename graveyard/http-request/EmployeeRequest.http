@@ -1,0 +1,31 @@
+POST http://localhost:8080/Employee/Create
+Content-Type:application/json
+
+{
+  "firstname": "Uschi",
+  "lastname": "Schiller",
+  "address": "Wienerstrasse 3"
+}
+
+###
+
+GET http://localhost:8080/Employee/1
+Accept: application/json
+
+###
+
+DELETE http://localhost:8080/Employee/Delete/1
+
+###
+
+PUT http://localhost:8080/Employee/Put
+Content-Type:application/json
+
+{
+  "id": 1,
+  "firstname" : "Michael",
+  "lastname": "Schuhmacher",
+  "address" : "Berlinerstrasse 7"
+}
+
+###
